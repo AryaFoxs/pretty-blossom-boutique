@@ -19,11 +19,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pretty Blossom Boutique | Toko Bunga Premium",
-    template: "%s | Pretty Blossom Boutique",
+    default: "Luxe Bloom Boutique | Toko Bunga Premium",
+    template: "%s | Luxe Bloom Boutique",
   },
   description:
-    "Toko bunga premium dengan rangkaian buket cantik, bunga papan, standing flower, dan dekorasi acara. Pengiriman same-day area Jabodetabek.",
+    "Toko bunga premium mewah dengan rangkaian buket eksklusif, bunga papan, standing flower, dan dekorasi acara. Pengiriman same-day area Jabodetabek.",
   keywords: [
     "toko bunga",
     "florist",
@@ -32,16 +32,17 @@ export const metadata: Metadata = {
     "dekorasi pernikahan",
     "standing flower",
     "Jakarta",
+    "luxury florist",
   ],
-  authors: [{ name: "Pretty Blossom Boutique" }],
+  authors: [{ name: "Luxe Bloom Boutique" }],
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://prettyblossom.com",
-    siteName: "Pretty Blossom Boutique",
-    title: "Pretty Blossom Boutique | Toko Bunga Premium",
+    url: "https://luxebloom.com",
+    siteName: "Luxe Bloom Boutique",
+    title: "Luxe Bloom Boutique | Toko Bunga Premium",
     description:
-      "Toko bunga premium dengan rangkaian buket cantik, bunga papan, standing flower, dan dekorasi acara.",
+      "Toko bunga premium mewah dengan rangkaian buket eksklusif, bunga papan, standing flower, dan dekorasi acara.",
   },
 };
 

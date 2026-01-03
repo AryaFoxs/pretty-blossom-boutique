@@ -5,7 +5,7 @@ export const testimonials: Testimonial[] = [
     id: '1',
     name: 'Sari',
     location: 'Jakarta',
-    content: 'Buketnya sangat cantik, persis seperti yang diharapkan! Pengirimannya cepat dan bunga tetap segar. Terima kasih Pretty Blossom Boutique!',
+    content: 'Buketnya sangat cantik, persis seperti yang diharapkan! Pengirimannya cepat dan bunga tetap segar. Terima kasih Luxe Bloom Boutique!',
     rating: 5,
   },
   {
@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Maya Putri',
     role: 'Founder & Creative Director',
     image: '/images/team/founder.jpg',
-    bio: 'Memulai Pretty Blossom dari kecintaan pada seni merangkai bunga sejak 2018.',
+    bio: 'Memulai Luxe Bloom dari kecintaan pada seni merangkai bunga sejak 2018.',
   },
   {
     id: '2',

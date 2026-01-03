@@ -8,7 +8,7 @@ import { services } from "@/lib/data/site"
 
 export const metadata: Metadata = {
   title: "Layanan",
-  description: "Layanan lengkap dari Pretty Blossom: pengiriman ekspres, dekorasi acara, langganan bulanan, dan desain kustom.",
+  description: "Layanan lengkap dari Luxe Bloom Boutique: pengiriman ekspres, dekorasi acara, langganan bulanan, dan desain kustom.",
 }
 
 const iconMap: Record<string, typeof Truck> = {
@@ -22,14 +22,14 @@ export default function LayananPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-rose-50 to-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-60 h-60 bg-rose-300 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 left-20 w-40 h-40 bg-pink-300 rounded-full blur-3xl" />
+      <section className="relative py-20 bg-gradient-to-b from-cream-100 to-background overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 right-20 w-60 h-60 bg-gold-400 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 left-20 w-40 h-40 bg-gold-300 rounded-full blur-3xl" />
         </div>
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-rose-500 font-medium mb-4">
+            <span className="inline-flex items-center gap-2 text-gold-500 font-medium mb-4">
               <Flower className="h-5 w-5" />
               Layanan Kami
             </span>
@@ -53,8 +53,8 @@ export default function LayananPage() {
                 <Card key={service.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="h-8 w-8 text-rose-500" />
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cream-100 to-gold-100 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="h-8 w-8 text-gold-500" />
                       </div>
                       <div className="flex-1">
                         <h3 className="font-display text-2xl font-bold text-warm-800 mb-3">
@@ -81,7 +81,7 @@ export default function LayananPage() {
       </section>
 
       {/* Process Section */}
-      <section className="section bg-rose-50">
+      <section className="section bg-cream-100">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-warm-800 mb-4">
@@ -100,7 +100,7 @@ export default function LayananPage() {
             ].map((item, index) => (
               <div key={index} className="text-center relative">
                 <div className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center mx-auto mb-4">
-                  <span className="font-display text-2xl font-bold text-rose-500">
+                  <span className="font-display text-2xl font-bold text-gold-500">
                     {item.step}
                   </span>
                 </div>
@@ -111,7 +111,7 @@ export default function LayananPage() {
                   {item.desc}
                 </p>
                 {index < 3 && (
-                  <ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-rose-300" />
+                  <ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-gold-300" />
                 )}
               </div>
             ))}
@@ -122,7 +122,7 @@ export default function LayananPage() {
       {/* CTA Section */}
       <section className="section">
         <div className="container">
-          <Card className="bg-gradient-to-r from-rose-500 to-pink-500 border-0 overflow-hidden">
+          <Card className="bg-gradient-to-r from-gold-600 to-gold-500 border-0 overflow-hidden">
             <CardContent className="p-12 text-center relative">
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-white rounded-full blur-3xl" />
@@ -132,7 +132,7 @@ export default function LayananPage() {
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
                   Butuh Bantuan Memilih?
                 </h2>
-                <p className="text-rose-100 text-lg mb-8 max-w-2xl mx-auto">
+                <p className="text-gold-100 text-lg mb-8 max-w-2xl mx-auto">
                   Tim kami siap membantu Anda menemukan rangkaian yang sempurna untuk setiap momen
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">

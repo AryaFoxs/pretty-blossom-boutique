@@ -38,7 +38,7 @@ Gunakan flower food yang biasanya disertakan dalam buket. Jika tidak ada, campur
 Dengan mengikuti tips di atas, buket bunga Anda akan tetap segar dan cantik lebih lama. Selamat mencoba!
     `,
     coverImage: '/images/blog/tips-bunga.jpg',
-    author: 'Tim Pretty Blossom',
+    author: 'Tim Luxe Bloom',
     publishedAt: '2024-12-20',
     category: 'Tips & Trik',
     readTime: 5,
@@ -82,7 +82,7 @@ Penuh semangat! Mawar orange menunjukkan antusiasme, hasrat, dan kebanggaan.
 Pilih warna mawar yang tepat untuk menyampaikan pesan Anda. Kami siap membantu Anda memilih rangkaian yang sempurna!
     `,
     coverImage: '/images/blog/makna-mawar.jpg',
-    author: 'Tim Pretty Blossom',
+    author: 'Tim Luxe Bloom',
     publishedAt: '2024-12-15',
     category: 'Inspirasi',
     readTime: 4,
@@ -122,7 +122,7 @@ Herbs dalam pot kecil atau bunga wildflower dalam jar mason memberikan kesan fre
 Kunjungi katalog kami untuk menemukan bunga dan tanaman yang sempurna untuk setiap ruangan!
     `,
     coverImage: '/images/blog/dekorasi-meja.jpg',
-    author: 'Tim Pretty Blossom',
+    author: 'Tim Luxe Bloom',
     publishedAt: '2024-12-10',
     category: 'Dekorasi',
     readTime: 6,

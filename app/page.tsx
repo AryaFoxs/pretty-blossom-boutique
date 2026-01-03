@@ -17,21 +17,21 @@ import { blogPosts } from "@/lib/data/blog"
 import { products } from "@/lib/data/products"
 import { formatPrice } from "@/lib/utils"
 
-// Category data
+// Category data - updated with gold theme
 const categories = [
   {
     title: "Untuk Kekasih",
     description: "Buket romantis mawar & lily",
     icon: Heart,
     href: "/katalog?occasion=romantis",
-    color: "bg-rose-100 text-rose-600",
+    color: "bg-blush-100 text-blush-500",
   },
   {
     title: "Untuk Ucapan Selamat",
     description: "Bunga papan & standing flower",
     icon: Award,
     href: "/katalog?category=standing-flower",
-    color: "bg-pink-100 text-pink-600",
+    color: "bg-gold-100 text-gold-600",
   },
   {
     title: "Untuk Rumah",
@@ -61,7 +61,7 @@ export default function HomePage() {
       <section className="section bg-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-rose-500 font-medium mb-4">
+            <span className="inline-flex items-center gap-2 text-gold-500 font-medium mb-4">
               <Flower className="h-5 w-5" />
               Selamat Datang
             </span>
@@ -69,9 +69,9 @@ export default function HomePage() {
               Di mana Setiap Kelopak Bercerita
             </h2>
             <p className="text-warm-600 text-lg leading-relaxed">
-              Selamat datang di <span className="font-semibold text-rose-600">Pretty Blossom Boutique</span>, 
-              rumah bagi rangkaian bunga terbaik. Kami merancang setiap karya dengan penuh cinta 
-              dan mengirimkannya tepat waktu untuk merayakan setiap momen kehidupan Anda—dari 
+              Selamat datang di <span className="font-semibold text-gold-600">Luxe Bloom Boutique</span>, 
+              rumah bagi rangkaian bunga mewah terbaik. Kami merancang setiap karya dengan penuh 
+              keahlian dan mengirimkannya tepat waktu untuk merayakan setiap momen kehidupan Anda—dari 
               kasih sayang, sukacita, hingga dukaca.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function HomePage() {
       </section>
 
       {/* Categories Section */}
-      <section className="section bg-gradient-to-b from-background to-rose-50/50">
+      <section className="section bg-gradient-to-b from-background to-cream-100/50">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-warm-800 mb-4">
@@ -93,7 +93,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category, index) => (
               <Link key={index} href={category.href}>
-                <Card className="h-full group cursor-pointer hover:border-rose-200 card-hover">
+                <Card className="h-full group cursor-pointer hover:border-gold-300 card-hover">
                   <CardContent className="p-6 text-center">
                     <div
                       className={`w-16 h-16 rounded-2xl ${category.color} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
@@ -137,23 +137,23 @@ export default function HomePage() {
             {featuredProducts.map((product) => (
               <Link key={product.id} href={`/katalog/${product.slug}`}>
                 <Card className="group overflow-hidden card-hover">
-                  <div className="aspect-square bg-gradient-to-br from-rose-100 to-pink-100 relative">
+                  <div className="aspect-square bg-gradient-to-br from-cream-100 to-gold-100 relative">
                     {/* Product image placeholder */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Flower className="h-20 w-20 text-rose-300 group-hover:scale-110 transition-transform duration-300" />
+                      <Flower className="h-20 w-20 text-gold-300 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     {product.featured && (
                       <Badge className="absolute top-3 left-3">Bestseller</Badge>
                     )}
                   </div>
                   <CardContent className="p-4">
-                    <h3 className="font-display text-lg font-semibold text-warm-800 mb-1 group-hover:text-rose-600 transition-colors">
+                    <h3 className="font-display text-lg font-semibold text-warm-800 mb-1 group-hover:text-gold-600 transition-colors">
                       {product.name}
                     </h3>
                     <p className="text-warm-500 text-sm mb-2 line-clamp-2">
                       {product.shortDescription}
                     </p>
-                    <p className="text-rose-600 font-semibold">
+                    <p className="text-gold-600 font-semibold">
                       {formatPrice(product.price)}
                     </p>
                   </CardContent>
@@ -165,7 +165,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="section bg-rose-50">
+      <section className="section bg-cream-100">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-warm-800 mb-4">
@@ -196,8 +196,8 @@ export default function HomePage() {
                     &ldquo;{testimonial.content}&rdquo;
                   </p>
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center">
-                      <span className="text-rose-600 font-semibold">
+                    <div className="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                      <span className="text-gold-600 font-semibold">
                         {testimonial.name.charAt(0)}
                       </span>
                     </div>
@@ -240,9 +240,9 @@ export default function HomePage() {
             {blogPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
                 <Card className="group overflow-hidden card-hover h-full">
-                  <div className="aspect-video bg-gradient-to-br from-rose-100 to-pink-100 relative">
+                  <div className="aspect-video bg-gradient-to-br from-cream-100 to-gold-100 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Flower className="h-12 w-12 text-rose-300" />
+                      <Flower className="h-12 w-12 text-gold-300" />
                     </div>
                   </div>
                   <CardContent className="p-5">
@@ -257,7 +257,7 @@ export default function HomePage() {
                         })}
                       </span>
                     </div>
-                    <h3 className="font-display text-xl font-semibold text-warm-800 mb-2 group-hover:text-rose-600 transition-colors line-clamp-2">
+                    <h3 className="font-display text-xl font-semibold text-warm-800 mb-2 group-hover:text-gold-600 transition-colors line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="text-warm-500 text-sm line-clamp-2">
@@ -272,13 +272,13 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-to-r from-rose-500 to-pink-500 text-white">
+      <section className="section bg-gradient-to-r from-gold-600 to-gold-500 text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Siap Mewujudkan Momen Spesial Anda?
             </h2>
-            <p className="text-rose-100 text-lg mb-8">
+            <p className="text-gold-100 text-lg mb-8">
               Konsultasikan kebutuhan Anda dengan tim kami dan dapatkan rangkaian bunga yang sempurna
             </p>
             <div className="flex flex-wrap justify-center gap-4">

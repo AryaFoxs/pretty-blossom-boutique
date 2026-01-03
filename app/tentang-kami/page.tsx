@@ -1,11 +1,12 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import { Flower, Target, Eye, Heart, Users } from "lucide-react"
 import { teamMembers } from "@/lib/data/site"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata: Metadata = {
   title: "Tentang Kami",
-  description: "Kenali Pretty Blossom Boutique, toko bunga premium yang telah dipercaya ribuan pelanggan sejak 2018.",
+  description: "Kenali Luxe Bloom Boutique, toko bunga premium mewah yang telah dipercaya ribuan pelanggan sejak 2018.",
 }
 
 const values = [
@@ -30,14 +31,14 @@ export default function TentangKamiPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-rose-50 to-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-40 h-40 bg-rose-300 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-60 h-60 bg-pink-300 rounded-full blur-3xl" />
+      <section className="relative py-20 bg-gradient-to-b from-cream-100 to-background overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-40 h-40 bg-gold-400 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-60 h-60 bg-gold-300 rounded-full blur-3xl" />
         </div>
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-rose-500 font-medium mb-4">
+            <span className="inline-flex items-center gap-2 text-gold-500 font-medium mb-4">
               <Flower className="h-5 w-5" />
               Tentang Kami
             </span>
@@ -56,13 +57,16 @@ export default function TentangKamiPage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-rose-100 to-pink-100 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Flower className="h-32 w-32 text-rose-300" />
-                </div>
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+                <Image
+                  src="/Hero Section.jpg"
+                  alt="Cerita Luxe Bloom Boutique"
+                  fill
+                  className="object-cover"
+                />
               </div>
               {/* Decorative frame */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-rose-200 rounded-3xl -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-gold-200 rounded-3xl -z-10" />
             </div>
             <div>
               <h2 className="font-display text-3xl font-bold text-warm-800 mb-6">
@@ -70,7 +74,7 @@ export default function TentangKamiPage() {
               </h2>
               <div className="space-y-4 text-warm-600 leading-relaxed">
                 <p>
-                  <span className="font-semibold text-rose-600">Pretty Blossom Boutique</span> dimulai 
+                  <span className="font-semibold text-gold-600">Luxe Bloom Boutique</span> dimulai 
                   dari kecintaan sederhana pada keindahan alam dan seni merangkai. Sejak tahun 2018, 
                   kami telah dipercaya oleh ribuan pelanggan untuk menjadi bagian dari momen-momen 
                   berharga mereka.
@@ -91,14 +95,14 @@ export default function TentangKamiPage() {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="section bg-rose-50">
+      <section className="section bg-cream-100">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Vision */}
             <Card className="bg-white border-0 shadow-lg">
               <CardContent className="p-8">
-                <div className="w-14 h-14 rounded-2xl bg-rose-100 flex items-center justify-center mb-6">
-                  <Eye className="h-7 w-7 text-rose-600" />
+                <div className="w-14 h-14 rounded-2xl bg-gold-100 flex items-center justify-center mb-6">
+                  <Eye className="h-7 w-7 text-gold-600" />
                 </div>
                 <h3 className="font-display text-2xl font-bold text-warm-800 mb-4">
                   Visi Kami
@@ -113,23 +117,23 @@ export default function TentangKamiPage() {
             {/* Mission */}
             <Card className="bg-white border-0 shadow-lg">
               <CardContent className="p-8">
-                <div className="w-14 h-14 rounded-2xl bg-pink-100 flex items-center justify-center mb-6">
-                  <Target className="h-7 w-7 text-pink-600" />
+                <div className="w-14 h-14 rounded-2xl bg-blush-100 flex items-center justify-center mb-6">
+                  <Target className="h-7 w-7 text-blush-500" />
                 </div>
                 <h3 className="font-display text-2xl font-bold text-warm-800 mb-4">
                   Misi Kami
                 </h3>
                 <ul className="space-y-3 text-warm-600">
                   <li className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">1</span>
+                    <span className="w-6 h-6 rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">1</span>
                     <span>Menyediakan bunga segar pilihan dari petani lokal & impor</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">2</span>
+                    <span className="w-6 h-6 rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">2</span>
                     <span>Menghadirkan desain yang kreatif dan penuh makna</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">3</span>
+                    <span className="w-6 h-6 rounded-full bg-gold-100 text-gold-600 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">3</span>
                     <span>Memberikan pengalaman berbelanja yang mudah dan memuaskan</span>
                   </li>
                 </ul>
@@ -153,8 +157,8 @@ export default function TentangKamiPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center">
-                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-rose-100 to-pink-100 flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="h-10 w-10 text-rose-500" />
+                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-cream-100 to-gold-100 flex items-center justify-center mx-auto mb-6">
+                  <value.icon className="h-10 w-10 text-gold-500" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-warm-800 mb-3">
                   {value.title}
@@ -169,7 +173,7 @@ export default function TentangKamiPage() {
       </section>
 
       {/* Team Section */}
-      <section className="section bg-gradient-to-b from-background to-rose-50">
+      <section className="section bg-gradient-to-b from-background to-cream-100">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-warm-800 mb-4">
@@ -182,10 +186,10 @@ export default function TentangKamiPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <Card key={member.id} className="overflow-hidden group">
-                <div className="aspect-square bg-gradient-to-br from-rose-100 to-pink-100 relative">
+                <div className="aspect-square bg-gradient-to-br from-cream-100 to-gold-100 relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-rose-200 flex items-center justify-center">
-                      <span className="text-4xl font-display font-bold text-rose-500">
+                    <div className="w-24 h-24 rounded-full bg-gold-200 flex items-center justify-center">
+                      <span className="text-4xl font-display font-bold text-gold-600">
                         {member.name.charAt(0)}
                       </span>
                     </div>
@@ -195,7 +199,7 @@ export default function TentangKamiPage() {
                   <h3 className="font-display text-xl font-semibold text-warm-800 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-rose-500 font-medium text-sm mb-3">
+                  <p className="text-gold-500 font-medium text-sm mb-3">
                     {member.role}
                   </p>
                   <p className="text-warm-500 text-sm">

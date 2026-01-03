@@ -9,19 +9,19 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-lg hover:shadow-xl hover:shadow-rose-500/25 hover:-translate-y-0.5",
+          "bg-gradient-to-r from-gold-600 to-gold-500 text-white shadow-lg hover:shadow-xl hover:shadow-gold-500/25 hover:-translate-y-0.5",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border-2 border-rose-300 bg-transparent text-rose-600 hover:bg-rose-50 hover:border-rose-400",
+          "border-2 border-gold-400 bg-transparent text-gold-600 hover:bg-gold-50 hover:border-gold-500",
         secondary:
-          "bg-rose-100 text-rose-700 hover:bg-rose-200",
+          "bg-gold-100 text-gold-700 hover:bg-gold-200",
         ghost:
-          "text-rose-600 hover:bg-rose-50 hover:text-rose-700",
+          "text-gold-600 hover:bg-gold-50 hover:text-gold-700",
         link:
-          "text-rose-600 underline-offset-4 hover:underline",
+          "text-gold-600 underline-offset-4 hover:underline",
         white:
-          "bg-white text-rose-600 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
+          "bg-white text-gold-600 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
       },
       size: {
         default: "h-11 px-6 py-2",

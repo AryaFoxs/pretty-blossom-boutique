@@ -13,21 +13,21 @@ import { faqs } from "@/lib/data/site"
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Pertanyaan yang sering ditanyakan tentang layanan Pretty Blossom Boutique.",
+  description: "Pertanyaan yang sering ditanyakan tentang layanan Luxe Bloom Boutique.",
 }
 
 export default function FAQPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-rose-50 to-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-1/4 w-40 h-40 bg-rose-300 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-1/4 w-60 h-60 bg-pink-300 rounded-full blur-3xl" />
+      <section className="relative py-20 bg-gradient-to-b from-cream-100 to-background overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-1/4 w-40 h-40 bg-gold-400 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-1/4 w-60 h-60 bg-gold-300 rounded-full blur-3xl" />
         </div>
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-rose-500 font-medium mb-4">
+            <span className="inline-flex items-center gap-2 text-gold-500 font-medium mb-4">
               <HelpCircle className="h-5 w-5" />
               FAQ
             </span>
@@ -49,7 +49,7 @@ export default function FAQPage() {
               <AccordionItem
                 key={faq.id}
                 value={faq.id}
-                className="bg-white rounded-2xl border border-warm-100 px-6 shadow-sm data-[state=open]:shadow-md transition-shadow"
+                className="bg-white rounded-2xl border border-cream-200 px-6 shadow-sm data-[state=open]:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-left">
                   {faq.question}
@@ -64,12 +64,12 @@ export default function FAQPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="section bg-rose-50">
+      <section className="section bg-cream-100">
         <div className="container max-w-3xl">
           <Card className="bg-white border-0 shadow-lg">
             <CardContent className="p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-rose-100 flex items-center justify-center mx-auto mb-6">
-                <Flower className="h-8 w-8 text-rose-500" />
+              <div className="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center mx-auto mb-6">
+                <Flower className="h-8 w-8 text-gold-500" />
               </div>
               <h2 className="font-display text-2xl font-bold text-warm-800 mb-4">
                 Masih Punya Pertanyaan?

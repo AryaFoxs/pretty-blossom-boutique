@@ -7,21 +7,21 @@ import { blogPosts } from "@/lib/data/blog"
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Tips, inspirasi, dan panduan seputar dunia bunga dari Pretty Blossom Boutique.",
+  description: "Tips, inspirasi, dan panduan seputar dunia bunga dari Luxe Bloom Boutique.",
 }
 
 export default function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-rose-50 to-background overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-1/3 w-60 h-60 bg-rose-300 rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-pink-300 rounded-full blur-3xl" />
+      <section className="relative py-20 bg-gradient-to-b from-cream-100 to-background overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-1/3 w-60 h-60 bg-gold-400 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-gold-300 rounded-full blur-3xl" />
         </div>
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-rose-500 font-medium mb-4">
+            <span className="inline-flex items-center gap-2 text-gold-500 font-medium mb-4">
               <Flower className="h-5 w-5" />
               Blog
             </span>
@@ -42,9 +42,9 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
                 <Card className="group overflow-hidden card-hover h-full flex flex-col">
-                  <div className="aspect-video bg-gradient-to-br from-rose-100 to-pink-100 relative">
+                  <div className="aspect-video bg-gradient-to-br from-cream-100 to-gold-100 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Flower className="h-16 w-16 text-rose-300 group-hover:scale-110 transition-transform duration-300" />
+                      <Flower className="h-16 w-16 text-gold-300 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                   </div>
                   <CardContent className="p-6 flex-1 flex flex-col">
@@ -59,18 +59,18 @@ export default function BlogPage() {
                         })}
                       </span>
                     </div>
-                    <h2 className="font-display text-xl font-semibold text-warm-800 mb-3 group-hover:text-rose-600 transition-colors line-clamp-2">
+                    <h2 className="font-display text-xl font-semibold text-warm-800 mb-3 group-hover:text-gold-600 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
                     <p className="text-warm-500 text-sm mb-4 line-clamp-3 flex-1">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-warm-100">
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-cream-200">
                       <span className="flex items-center gap-1 text-sm text-warm-500">
                         <Clock className="h-4 w-4" />
                         {post.readTime} menit baca
                       </span>
-                      <span className="text-rose-500 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                      <span className="text-gold-500 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                         Baca Selengkapnya <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
@@ -83,9 +83,9 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="section bg-rose-50">
+      <section className="section bg-cream-100">
         <div className="container max-w-2xl text-center">
-          <Flower className="h-12 w-12 text-rose-400 mx-auto mb-6" />
+          <Flower className="h-12 w-12 text-gold-400 mx-auto mb-6" />
           <h2 className="font-display text-2xl font-bold text-warm-800 mb-4">
             Dapatkan Tips Terbaru
           </h2>
@@ -96,9 +96,9 @@ export default function BlogPage() {
             <input
               type="email"
               placeholder="Email Anda"
-              className="flex-1 h-12 px-4 rounded-xl border-2 border-warm-200 focus:border-rose-300 focus:outline-none focus:ring-4 focus:ring-rose-100"
+              className="flex-1 h-12 px-4 rounded-xl border-2 border-cream-300 focus:border-gold-400 focus:outline-none focus:ring-4 focus:ring-gold-100"
             />
-            <button className="h-12 px-6 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-medium rounded-xl hover:shadow-lg transition-shadow">
+            <button className="h-12 px-6 bg-gradient-to-r from-gold-600 to-gold-500 text-white font-medium rounded-xl hover:shadow-lg transition-shadow">
               Berlangganan
             </button>
           </div>

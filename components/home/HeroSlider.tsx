@@ -15,17 +15,17 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/images/hero/hero-1.jpg",
+    image: "/Hero Section 2.jpg",
     tagline: "Keindahan yang Tepat Waktu, untuk Momen Spesialmu",
     subtitle: "Buket bunga segar mewah dengan kualitas premium",
   },
   {
-    image: "/images/hero/hero-2.jpg",
+    image: "/Hero Section 2.jpg",
     tagline: "Wujudkan Acara Impian dengan Sentuhan Alam",
     subtitle: "Dekorasi pernikahan yang memukau dan berkesan",
   },
   {
-    image: "/images/hero/hero-3.jpg",
+    image: "/Hero Section 2.jpg",
     tagline: "Hadirkan Senyuman, Kirimkan Rasa Sayang",
     subtitle: "Proses pengemasan hadiah dengan penuh cinta",
   },
@@ -68,18 +68,17 @@ export function HeroSlider() {
               : "opacity-0 scale-105"
           )}
         >
-          {/* Background Image Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-br from-rose-200 via-pink-100 to-cream-100">
-            {/* Decorative flowers pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-10 left-10 w-32 h-32 bg-rose-300 rounded-full blur-3xl" />
-              <div className="absolute top-1/3 right-20 w-48 h-48 bg-pink-300 rounded-full blur-3xl" />
-              <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-rose-200 rounded-full blur-3xl" />
-            </div>
-          </div>
+          {/* Background Image */}
+          <Image
+            src={slide.image}
+            alt="Luxe Bloom Boutique Hero"
+            fill
+            className="object-cover object-center"
+            priority={index === 0}
+          />
           
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-warm-900/70 via-warm-900/40 to-transparent" />
+          {/* Gradient Overlay - darker for better text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-warm-900/85 via-warm-900/60 to-warm-900/30" />
         </div>
       ))}
 
@@ -90,23 +89,23 @@ export function HeroSlider() {
             key={currentSlide}
             className="animate-fade-in"
           >
-            <span className="inline-block px-4 py-2 bg-rose-500/20 backdrop-blur-sm rounded-full text-rose-100 text-sm font-medium mb-6">
-              🌸 Pretty Blossom Boutique
+            <span className="inline-block px-4 py-2 bg-gold-500 rounded-full text-white text-sm font-medium mb-6 shadow-lg">
+              ✨ Luxe Bloom Boutique
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>
               {slides[currentSlide].tagline}
             </h1>
-            <p className="text-lg md:text-xl text-rose-100 mb-8 max-w-lg">
+            <p className="text-lg md:text-xl text-white mb-8 max-w-lg font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5)' }}>
               {slides[currentSlide].subtitle}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-base">
+              <Button size="lg" className="text-base shadow-lg">
                 Pesan Sekarang
               </Button>
-              <Button size="lg" variant="outline" className="text-base border-white text-white hover:bg-white/10 hover:text-white">
+              <Button size="lg" variant="outline" className="text-base border-white text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 hover:text-white shadow-lg">
                 <Link href="/katalog">Lihat Katalog</Link>
               </Button>
-              <Button size="lg" variant="ghost" className="text-base text-white hover:bg-white/10">
+              <Button size="lg" variant="ghost" className="text-base text-white hover:bg-white/20" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
                 <Link href="/hubungi-kami">Konsultasi Gratis</Link>
               </Button>
             </div>
@@ -117,14 +116,14 @@ export function HeroSlider() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-200"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-gold-500/50 transition-all duration-200"
         aria-label="Previous slide"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/30 transition-all duration-200"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-gold-500/50 transition-all duration-200"
         aria-label="Next slide"
       >
         <ChevronRight className="h-6 w-6" />
@@ -139,7 +138,7 @@ export function HeroSlider() {
             className={cn(
               "w-3 h-3 rounded-full transition-all duration-300",
               index === currentSlide
-                ? "bg-white w-8"
+                ? "bg-gold-400 w-8"
                 : "bg-white/50 hover:bg-white/70"
             )}
             aria-label={`Go to slide ${index + 1}`}
